@@ -12,7 +12,7 @@ const userAuthRoutes = require('./routes/user-auth-routes');
 const roomManagementRoutes = require('./routes/room-management-routes');
 
 app.use('/api/user', userAuthRoutes);
-app.use('/api/room', roomManagementRoutes);
+app.use('/api/rooms', roomManagementRoutes);
 
 app.get('/', (req, res) => {
     res.json({ message: 'API is running' });
